@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+  <meta name="format-detection" content="telephone=no">
+  <title>个人中心</title>
+  <link rel="stylesheet" href="css/frozen.css"></head>
+<body ontouchstart="">
+  <header class="ui-header ui-header-positive ui-border-b"> <i class="ui-icon-return" onclick="history.back()"></i>
+    <h1>个人中心</h1>
+    <button class="ui-btn">回首页</button>
+  </header>
+  <footer class="ui-footer ui-footer-btn">
+    <ul class="ui-tiled ui-border-t">
+      <li data-href="index.html" class="ui-border-r">
+        <div>安全总动员</div>
+      </li>
+      <li data-href="shopcity.html" class="ui-border-r">
+        <div>安全商城</div>
+      </li>
+      <li data-href="user/index.html">
+        <div>我的账号</div>
+      </li>
+    </ul>
+  </footer>
+  <section class="ui-container">
+    <div class="ui-tab">
+      <ul class="ui-tab-nav ui-border-b">
+        <li class="current">热门推荐</li>
+        <li>全部表情</li>
+        <li>表情</li>
+      </ul>
+      <ul class="ui-tab-content" style="width:300%">
+        <li class="current">选项1内容</li>
+        <li>选项2内容</li>
+        <li>选项3内容</li>
+      </ul>
+    </div>
+  </section>
+  <script src="js/lib/zeptojs/zepto.min.js"></script>
+  <script src="js/frozen.js"></script>
+  <script>
+        (function() {
+            var tab = new fz.Scroll('.ui-tab', {
+                role: 'tab',
+                autoplay: true,
+                interval: 3000
+            });
+            tab.on('beforeScrollStart', function(from, to) {
+                console.log(from, to);
+            });
+            tab.on('scrollEnd', function(curPage) {
+                console.log(curPage);
+            });
+          })();
+        </script>
+</body>
+</html>
