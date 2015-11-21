@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+  <meta name="format-detection" content="telephone=no">
+  <title>安全总动员商城首页</title>
+  <link rel="stylesheet" href="css/frozen.css">
+  <link rel="stylesheet" href="css/swiper.3.2.0.min.css">
+  <link rel="stylesheet" href="css/css/mian.css">
+  </head>
+<body ontouchstart="">
+  <header class="ui-header ui-header-positive">
+    <i class="ui-icon-return" onclick="history.back()"></i>
+    <h1><span class="u-top-tit">商品列表</span></h1>
+    <!-- <a class="u-user-centent" href="search.html">搜索</a> -->
+    <a class="u-user-centent" href="user/index.html">个人中心</a>
+  </header>
+  <footer class="ui-footer ui-footer-btn">
+    <ul class="ui-tiled">
+      <li class="">
+        <div><a href="index.html">安全总动员</a></div>
+      </li>
+      <li class="">
+        <div><a class="active" href="shopcity.html">安全商城</a></div>
+      </li>
+      <li>
+        <div><a href="user/index.html">我的账号</a></div>
+      </li>
+    </ul>
+  </footer>
+  <section class="ui-container touchweb-page">
+    <div class="l-shoplist-page l-float">
+      <ul>
+        <li>
+          <div class="shoplist">
+              <a href="">
+                <div class="shopimg">
+                  <img src="word/shoplist01.png" alt="">
+                </div>
+                <p class="shopname">多功能应急电源</p>
+                <p class="shopprice">￥800.00</p>
+              </a>
+          </div>
+        </li>
+        <li>
+          <div class="shoplist">
+              <a href="">
+                <div class="shopimg">
+                  <img src="word/shoplist01.png" alt="">
+                </div>
+                <p class="shopname">多功能应急电源</p>
+                <p class="shopprice">￥800.00</p>
+              </a>
+          </div>
+        </li>
+        <li>
+          <div class="shoplist">
+              <a href="">
+                <div class="shopimg">
+                  <img src="word/shoplist01.png" alt="">
+                </div>
+                <p class="shopname">多功能应急电源</p>
+                <p class="shopprice">￥800.00</p>
+              </a>
+          </div>
+        </li>
+        <li>
+          <div class="shoplist">
+              <a href="">
+                <div class="shopimg">
+                  <img src="word/shoplist01.png" alt="">
+                </div>
+                <p class="shopname">多功能应急电源</p>
+                <p class="shopprice">￥800.00</p>
+              </a>
+          </div>
+        </li>
+      </ul>
+
+    </div>
+  </section>
+  <script src="js/lib/zeptojs/zepto.min.js"></script>
+  <script src="js/frozen.js"></script>
+  <script src="js/swiper.3.2.0.jquery.min.js"></script>
+  <script type="text/javascript">
+    (function(){
+
+    var slider = new fz.Scroll('.ui-slider', {
+        role: 'slider',
+        indicator: true,
+        autoplay: true,
+        interval: 3000
+    });
+    })();
+  </script>
+  <script type="text/javascript">
+    var mySwiper = new Swiper('.swiper-container',{
+    scrollbar:'.swiper-scrollbar',
+    scrollbarHide:false,
+      });
+  </script>
+</body>
+</html>

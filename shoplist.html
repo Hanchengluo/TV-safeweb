@@ -22,6 +22,9 @@
         <div><a href="index.html">安全总动员</a></div>
       </li>
       <li class="">
+        <div><a href="fanscity.html">粉丝大爆炸</a></div>
+      </li>
+      <li class="">
         <div><a class="active" href="shopcity.html">安全商城</a></div>
       </li>
       <li>
@@ -30,11 +33,25 @@
     </ul>
   </footer>
   <section class="ui-container touchweb-page">
+    <div class="l-shoplist-ad">
+      <img src="word/banner02.png">
+    </div>
     <div class="l-shoplist-page l-float">
       <ul>
         <li>
           <div class="shoplist">
-              <a href="">
+              <a href="shopinfo.html">
+                <div class="shopimg">
+                  <img src="word/shoplist01.png" alt="">
+                </div>
+                <p class="shopname">多功能应急电源</p>
+                <p class="shopprice">￥800.00</p>
+              </a>
+          </div>
+        </li>
+        <li>
+          <div class="shoplist">
+              <a href="shopinfo.html">
                 <div class="shopimg">
                   <img src="word/shoplist01.png" alt="">
                 </div>
@@ -56,7 +73,29 @@
         </li>
         <li>
           <div class="shoplist">
-              <a href="">
+              <a href="shopinfo.html">
+                <div class="shopimg">
+                  <img src="word/shoplist01.png" alt="">
+                </div>
+                <p class="shopname">多功能应急电源</p>
+                <p class="shopprice">￥800.00</p>
+              </a>
+          </div>
+        </li>
+        <li>
+          <div class="shoplist">
+              <a href="shopinfo.html">
+                <div class="shopimg">
+                  <img src="word/shoplist01.png" alt="">
+                </div>
+                <p class="shopname">多功能应急电源</p>
+                <p class="shopprice">￥800.00</p>
+              </a>
+          </div>
+        </li>
+        <li>
+          <div class="shoplist">
+              <a href="shopinfo.html">
                 <div class="shopimg">
                   <img src="word/shoplist01.png" alt="">
                 </div>
@@ -68,6 +107,39 @@
         <li>
           <div class="shoplist">
               <a href="">
+                <div class="shopimg">
+                  <img src="word/shoplist01.png" alt="">
+                </div>
+                <p class="shopname">多功能应急电源</p>
+                <p class="shopprice">￥800.00</p>
+              </a>
+          </div>
+        </li>
+        <li>
+          <div class="shoplist">
+              <a href="shopinfo.html">
+                <div class="shopimg">
+                  <img src="word/shoplist01.png" alt="">
+                </div>
+                <p class="shopname">多功能应急电源</p>
+                <p class="shopprice">￥800.00</p>
+              </a>
+          </div>
+        </li>
+        <li>
+          <div class="shoplist">
+              <a href="shopinfo.html">
+                <div class="shopimg">
+                  <img src="word/shoplist01.png" alt="">
+                </div>
+                <p class="shopname">多功能应急电源</p>
+                <p class="shopprice">￥800.00</p>
+              </a>
+          </div>
+        </li>
+        <li>
+          <div class="shoplist">
+              <a href="shopinfo.html">
                 <div class="shopimg">
                   <img src="word/shoplist01.png" alt="">
                 </div>
@@ -77,28 +149,25 @@
           </div>
         </li>
       </ul>
-
+    </div>
+    <div class="ui-btn-more">
+      <a href="javascript:void()" id="ui-btn-more">加载更多</a>
     </div>
   </section>
   <script src="js/lib/zeptojs/zepto.min.js"></script>
   <script src="js/frozen.js"></script>
-  <script src="js/swiper.3.2.0.jquery.min.js"></script>
   <script type="text/javascript">
-    (function(){
-
-    var slider = new fz.Scroll('.ui-slider', {
-        role: 'slider',
-        indicator: true,
-        autoplay: true,
-        interval: 3000
+    $("#ui-btn-more").tap(function(){
+        var el=$.loading({
+            content:'疯狂加载中...',
+        })
+        setTimeout(function(){
+            el.loading("hide");
+        },2000);
+        el.on("loading:hide",function(){
+            console.log("loading hide");
+        });
     });
-    })();
-  </script>
-  <script type="text/javascript">
-    var mySwiper = new Swiper('.swiper-container',{
-    scrollbar:'.swiper-scrollbar',
-    scrollbarHide:false,
-      });
-  </script>
+    </script>
 </body>
 </html>
