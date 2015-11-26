@@ -518,22 +518,6 @@ textarea::placeholder {
 .l-shopcar-list .shoptit {
   width: 72%;
 }
-.u-user-exit {
-  width: 1.7rem;
-  height: 44px;
-  text-indent: -99999px;
-  background: url(../../images/icon-userexit.png) center center no-repeat;
-  background-size: contain;
-  z-index: 999;
-  display: inline-block;
-  position: absolute;
-  right: 10px;
-  top: 50%;
-  margin-top: -24px;
-}
-.u-cenlist-tit {
-  background: #ffe501;
-}
 .u-sign {
   background: #ffe501;
   color: #000;
@@ -591,4 +575,31 @@ textarea::placeholder {
 .user-link {
   display: block;
   padding: 12px 10px;
+}
+.user-list {
+  background: #ffe501;
+}
+.user-list li {
+  margin-left: 0;
+  padding-left: 10px;
+}
+.user-list li:after {
+  color: rgba(0, 0, 0, 0);
+  color: #000;
+}
+.u-user-exit {
+  width: 1.7rem;
+  height: 44px;
+  text-indent: -99999px;
+  background: url(../../images/icon-userexit.png) center center no-repeat;
+  background-size: contain;
+  z-index: 999;
+  display: inline-block;
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  margin-top: -24px;
+}
+.u-cenlist-tit {
+  background: #ffe501;
 }
