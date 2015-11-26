@@ -5,41 +5,54 @@
   <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
   <meta name="format-detection" content="telephone=no">
   <title>个人中心</title>
-  <link rel="stylesheet" href="css/frozen.css"></head>
+  <link rel="stylesheet" href="../css/frozen.css">
+  <link rel="stylesheet" href="../css/swiper.3.2.0.min.css">
+  <link rel="stylesheet" href="../css/css/mian.css">
+  </head>
 <body ontouchstart="">
-  <header class="ui-header ui-header-positive ui-border-b"> <i class="ui-icon-return" onclick="history.back()"></i>
-    <h1>个人中心</h1>
-    <button class="ui-btn">回首页</button>
+  <header class="ui-header ui-header-positive">
+    <i class="ui-icon-return" onclick="history.back()"></i>
+    <h1><span class="u-top-tit">个人中心</span></h1>
+    <!-- <a class="u-user-centent" href="search.html">搜索</a> -->
+    <a class="u-user-exit" href="index.html">账户编辑</a>
   </header>
   <footer class="ui-footer ui-footer-btn">
-    <ul class="ui-tiled ui-border-t">
-      <li data-href="index.html" class="ui-border-r">
-        <div>安全总动员</div>
+    <ul class="ui-tiled">
+      <li class="">
+        <div><a href="index.html">安全总动员</a></div>
       </li>
-      <li data-href="shopcity.html" class="ui-border-r">
-        <div>安全商城</div>
+      <li class="">
+        <div><a href="fanscity.html">粉丝大爆炸</a></div>
       </li>
-      <li data-href="user/index.html">
-        <div>我的账号</div>
+      <li class="">
+        <div><a href="shopcity.html">安全商城</a></div>
+      </li>
+      <li>
+        <div><a class="active" href="user/index.html">我的账号</a></div>
       </li>
     </ul>
   </footer>
   <section class="ui-container">
-    <div class="ui-tab">
-      <ul class="ui-tab-nav ui-border-b">
-        <li class="current">热门推荐</li>
-        <li>全部表情</li>
-        <li>表情</li>
-      </ul>
-      <ul class="ui-tab-content" style="width:300%">
-        <li class="current">选项1内容</li>
-        <li>选项2内容</li>
-        <li>选项3内容</li>
+    <div class="u-tit">
+      <ul class="ui-list ui-border-tb u-cenlist-tit">
+        <li class="ui-border-t">
+          <div class="ui-avatar-lg">
+            <span style="background-image:url(../images/icon-userlogo.png)"></span>
+          </div>
+          <div class="ui-list-info">
+            <h3 class="ui-nowrap">欢迎您，test</h3>
+            <h4 class="ui-nowrap">身份：一级用户</h4>
+            <h4 class="ui-nowrap">账户：test</h4>
+          </div>
+        </li>
       </ul>
     </div>
   </section>
+  <script src="js/jquery-1.9.1.min.js"></script>
   <script src="js/lib/zeptojs/zepto.min.js"></script>
   <script src="js/frozen.js"></script>
+  <script src="js/swiper.3.2.0.jquery.min.js"></script>
+  <script src="js/jquery.Spinner.js"></script>
   <script>
         (function() {
             var tab = new fz.Scroll('.ui-tab', {
