@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+  <meta name="format-detection" content="telephone=no">
+  <title>用户签到</title>
+  <link rel="stylesheet" href="../css/frozen.css">
+  <link rel="stylesheet" href="../css/swiper.3.2.0.min.css">
+  <link rel="stylesheet" href="../css/css/mian.css">
+  </head>
+<body ontouchstart="" onload="time()">
+  <header class="ui-header ui-header-positive">
+    <i class="ui-icon-return" onclick="history.back()"></i>
+    <h1><span class="u-top-tit">账户设置</span></h1>
+    <!-- <a class="u-user-centent" href="search.html">搜索</a> -->
+    <a class="u-user-centent" href="index.html">个人中心</a>
+  </header>
+  <section class="ui-container touchweb-page">
+    <div class="ui-row-flex">
+      <div class="ui-col ui-col textc fz18 pt10"><p id="signintime"></p></div>
+    </div>
+    <div class="ui-row-flex">
+      <div class="ui-col ui-col textc fz18 pt10">
+        <a class="u-signin-btn fz24 fc-y" id="u-signin-btn" href="javascript:void(0)">签到</a>
+      </div>
+    </div>
+    <div class="ui-row-flex">
+      <div class="ui-col ui-col textc fz18 pt10"><p class="u-detail-time fz16">00:13:30</p></div>
+    </div>
+    <h2 class="l-userc-title mb10 pt10">今日签到</h2>
+    <div class="l-sigin-list l-float bb">
+      <div class="userimg l-left"><img src="../images/icon-userlogo.png" alt=""></div>
+      <div class="username l-left">用户名称</div>
+      <div class="sigintime l-right">00:03:20</div>
+    </div>
+    <div class="l-sigin-list l-float bb">
+      <div class="userimg l-left"><img src="../images/icon-userlogo.png" alt=""></div>
+      <div class="username l-left">用户名称</div>
+      <div class="sigintime l-right">00:03:20</div>
+    </div>
+    <div class="l-sigin-list l-float bb">
+      <div class="userimg l-left"><img src="../images/icon-userlogo.png" alt=""></div>
+      <div class="username l-left">用户名称</div>
+      <div class="sigintime l-right">00:03:20</div>
+    </div>
+    <div class="l-sigin-list l-float bb">
+      <div class="userimg l-left"><img src="../images/icon-userlogo.png" alt=""></div>
+      <div class="username l-left">用户名称</div>
+      <div class="sigintime l-right">00:03:20</div>
+    </div>
+    <div class="l-sigin-list l-float bb">
+      <div class="userimg l-left"><img src="../images/icon-userlogo.png" alt=""></div>
+      <div class="username l-left">用户名称</div>
+      <div class="sigintime l-right">00:03:20</div>
+    </div>
+    <div class="l-sigin-list l-float bb">
+      <div class="userimg l-left"><img src="../images/icon-userlogo.png" alt=""></div>
+      <div class="username l-left">用户名称</div>
+      <div class="sigintime l-right">00:03:20</div>
+    </div>
+    <div class="l-sigin-list l-float bb">
+      <div class="userimg l-left"><img src="../images/icon-userlogo.png" alt=""></div>
+      <div class="username l-left">用户名称</div>
+      <div class="sigintime l-right">00:03:20</div>
+    </div>
+    <div class="l-sigin-list l-float bb">
+      <div class="userimg l-left"><img src="../images/icon-userlogo.png" alt=""></div>
+      <div class="username l-left">用户名称</div>
+      <div class="sigintime l-right">00:03:20</div>
+    </div>
+    <div class="l-sigin-list l-float bb">
+      <div class="userimg l-left"><img src="../images/icon-userlogo.png" alt=""></div>
+      <div class="username l-left">用户名称</div>
+      <div class="sigintime l-right">00:03:20</div>
+    </div>
+    <div class="l-sigin-list l-float bb">
+      <div class="userimg l-left"><img src="../images/icon-userlogo.png" alt=""></div>
+      <div class="username l-left">用户名称</div>
+      <div class="sigintime l-right">00:03:20</div>
+    </div>
+  </section>
+  <script src="../js/lib/zeptojs/zepto.min.js"></script>
+  <script src="../js/frozen.js"></script>
+  <script type="text/javascript">
+  var el;
+  $("#u-signin-btn").tap(function(){
+      el=$.tips({
+          content:'签到成功',
+          stayTime:2000,
+          type:"success"
+      })
+      el.on("tips:hide",function(){
+          console.log("tips hide");
+      })
+  });
+</script>
+<script language="javascript" type="text/javascript">
+  //js获取日期
+  function time()
+  {
+    var now= new Date();
+    var year=now.getFullYear();
+    var month=now.getMonth();
+    var date=now.getDate();
+  //写入相应id
+   document.getElementById("signintime").innerHTML=year+"年"+(month+1)+"月"+date+"日";
+  }
+
+  </script>
+</body>
+</html>

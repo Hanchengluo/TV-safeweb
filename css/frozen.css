@@ -2573,8 +2573,8 @@ i
 {
     text-align: center;
 
-    border-right: 1px solid #e0e0e0;
-    border-bottom: 1px solid #e0e0e0;
+    border-right: 1px solid #000;
+    border-bottom: 1px solid #000;
 }@media screen and (-webkit-min-device-pixel-ratio:2)
 {
     .ui-table td,
@@ -3004,7 +3004,7 @@ i
     color: #fff;
     border-bottom-right-radius: 3px;
     border-bottom-left-radius: 3px;
-    background-color: rgba(0,0,0,.6);
+    background-color: rgba(53, 181, 88, 0.9);
 }.ui-poptips-cnt i
 {
     display: inline-block;
