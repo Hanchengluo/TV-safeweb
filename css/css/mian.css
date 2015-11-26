@@ -580,6 +580,7 @@ textarea::placeholder {
   background: #ffe501;
 }
 .user-list li {
+  display: block;
   margin-left: 0;
   padding-left: 10px;
 }
@@ -587,7 +588,10 @@ textarea::placeholder {
   color: rgba(0, 0, 0, 0);
   color: #000;
 }
-.u-user-exit {
+.user-list li:active {
+  background-color: #ffed89;
+}
+.u-user-edit {
   width: 1.7rem;
   height: 44px;
   text-indent: -99999px;
@@ -602,4 +606,21 @@ textarea::placeholder {
 }
 .u-cenlist-tit {
   background: #ffe501;
+}
+.u-cenlist-tit .user-icon {
+  width: 10rem;
+  height: 10rem;
+  border-radius: 10rem;
+  border: 4px solid #ffed89;
+  margin-left: 10px;
+}
+.u-cenlist-tit .user-name-text {
+  margin-left: 1rem;
+}
+.u-cenlist-tit .user-name-text h3 {
+  font-size: 20px;
+  font-weight: bold;
+}
+.u-cenlist-tit .user-name-text h4 {
+  line-height: 34px;
 }
