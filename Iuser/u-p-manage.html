@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
   <meta name="format-detection" content="telephone=no">
-  <title>注册账户</title>
+  <title>手机管理</title>
   <link rel="stylesheet" href="../css/frozen.css">
   <link rel="stylesheet" href="../css/swiper.3.2.0.min.css">
   <link rel="stylesheet" href="../css/css/mian.css">
@@ -12,13 +12,22 @@
 <body ontouchstart="">
   <header class="ui-header ui-header-positive">
     <i class="ui-icon-return" onclick="history.back()"></i>
-    <h1><span class="u-top-tit">注册账户</span></h1>
+    <h1><span class="u-top-tit">手机管理</span></h1>
     <!-- <a class="u-user-centent" href="search.html">搜索</a> -->
+    <a class="u-user-centent" href="user/index.html">个人中心</a>
   </header>
   <section class="ui-container touchweb-page">
-    <div class="ui-form ui-border-t u-sign">
-      <form action="#">
-        <div class="ui-form-item ui-form-item-pure uc-border-b user-phone">
+    <div class="ui-form ui-border-t u-changekey">
+      <ul class="ui-list ui-list-pure uc-border-b user-bg">
+        <li class="ui-border-t">
+          <h4>当前状态：test</h4>
+          <p><span>功能简述：</span><span>手机号码为注册账号如果变更号码或者丢失，可通过本功能更换手机号码</span></p>
+        </div>
+        </li>
+      </ul>
+      <form action="#" class="u-changekey">
+        <div class="ui-form-item ui-form-item-show uc-border-b user-text">
+            <label for="#">手机号码：</label>
             <input type="text" placeholder="手机号">
             <a href="#" class="ui-icon-close"></a>
         </div>
@@ -30,11 +39,8 @@
         </div>
       </form>
     </div>
-    <div class="ui-btn-wrap user-ensure">
-      <button class="ui-btn-lg ui-btn-primary" href="register2.html">
-        下一步
-      </button>
-      <a href="login.html">已有账号，马上登录</a>
+    <div class="ui-btn-wrap user-btn-m">
+        <a class="u-shopflow-btn" href="javascript:void()">确认修改</a>
     </div>
   </section>
 
