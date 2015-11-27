@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
   <meta name="format-detection" content="telephone=no">
-  <title>安全总动员商城首页</title>
+  <title>订单详情</title>
   <link rel="stylesheet" href="css/frozen.css">
   <link rel="stylesheet" href="css/swiper.3.2.0.min.css">
   <link rel="stylesheet" href="css/css/mian.css">
@@ -12,7 +12,7 @@
 <body ontouchstart="">
   <header class="ui-header ui-header-positive">
     <i class="ui-icon-return" onclick="history.back()"></i>
-    <h1><span class="u-top-tit">我的订单</span></h1>
+    <h1><span class="u-top-tit">订单详情</span></h1>
     <!-- <a class="u-user-centent" href="search.html">搜索</a> -->
     <a class="u-user-centent" href="user/index.html">个人中心</a>
   </header>
@@ -33,7 +33,21 @@
     </ul>
   </footer>
   <section class="ui-container touchweb-page">
+    <div class="l-orderinfo-box bg-h2">
+      <h2 class="l-userc-title">收货信息</h2>
+      <ul class="ui-row">
+          <li class="ui-col ui-col-100 ptb8 bb">订单提交时间：2015-11-27 00:29:41  </li>
+          <li class="ui-col ui-col-100 ptb8 bb">收件人：张智霖</li>
+          <li class="ui-col ui-col-100 ptb8 bb">手机号码：18924918891</li>
+          <li class="ui-col ui-col-100 ptb8 bb">邮编： 000000</li>
+          <li class="ui-col ui-col-100 ptb8 bb">详细地址： 广东省 广州市 白云区 的撒撒旦</li>
+          <li class="ui-col ui-col-100 ptb8 bb">常用邮箱：1055198140@qq.com</li>
+          <li class="ui-col ui-col-100 ptb8 bb">发票抬头：不开发票 </li>
+          <li class="ui-col ui-col-100 ptb8 bb">备注：专业贴膜30年 </li>
+      </ul>
+    </div>
     <div class="l-shoporder-list bg-h2 ptb8 fz14">
+      <h2 class="l-userc-title">商品清单</h2>
       <div class="ui-arrowlink ptb8 bb fz16"><a class="dis" href="">201511232230012631</a></div>
       <div class="ui-row-flex ui-whitespace ptb8  bb">
           <div class="ui-col ui-col-2 textl">宏碁（acer）ES1-411-C7K0 14英 寸笔记本</div>
@@ -43,28 +57,11 @@
           <div class="ui-col ui-col textr"><em class="textl pr10">待付款</em><em class="pr10">共1件商品</em>合计：￥76.12  (含运费￥0.00)</div>
       </div>
       <div class="ui-row-flex ui-whitespace ptb8">
-          <div class="ui-col ui-col textr"><a class="u-shopflow-btn" href="orderInput.html">支付</a><a class="u-shopflow-btn" href="">取消</a></div>
+          <div class="ui-col ui-col textc"><a class="u-shopflow-btn" href="javascript:void()">删除</a></div>
       </div>
-    </div>
-
-    <div class="ui-btn-more">
-      <a href="javascript:void()" id="ui-btn-more">加载更多</a>
     </div>
   </section>
   <script src="js/lib/zeptojs/zepto.min.js"></script>
   <script src="js/frozen.js"></script>
-  <script type="text/javascript">
-    $("#ui-btn-more").tap(function(){
-        var el=$.loading({
-            content:'疯狂加载中...',
-        })
-        setTimeout(function(){
-            el.loading("hide");
-        },2000);
-        el.on("loading:hide",function(){
-            console.log("loading hide");
-        });
-    });
-    </script>
 </body>
 </html>
