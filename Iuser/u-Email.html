@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
   <meta name="format-detection" content="telephone=no">
-  <title>手机管理</title>
+  <title>验证邮箱</title>
   <link rel="stylesheet" href="../css/frozen.css">
   <link rel="stylesheet" href="../css/swiper.3.2.0.min.css">
   <link rel="stylesheet" href="../css/css/mian.css">
@@ -12,38 +12,25 @@
 <body ontouchstart="">
   <header class="ui-header ui-header-positive">
     <i class="ui-icon-return" onclick="history.back()"></i>
-    <h1><span class="u-top-tit">手机管理</span></h1>
+    <h1><span class="u-top-tit">验证邮箱</span></h1>
     <!-- <a class="u-user-centent" href="search.html">搜索</a> -->
-    <a class="u-user-centent" href="user/index.html">个人中心</a>
+    <a class="u-user-centent" href="../Iuser/index.html">个人中心</a>
   </header>
   <section class="ui-container touchweb-page">
     <div class="ui-form ui-border-t u-changekey">
-      <ul class="ui-list ui-list-pure uc-border-b user-bg">
-        <li class="ui-border-t">
-          <h4>当前状态：test</h4>
-          <p><span>功能简述：</span><span>手机号码为注册账号如果变更号码或者丢失，可通过本功能更换手机号码</span></p>
-        </div>
-        </li>
-      </ul>
-      <form action="#" class="u-changekey">
-        <div class="ui-form-item ui-form-item-show uc-border-b user-text">
-            <label for="#">手机号码：</label>
-            <input type="text" placeholder="手机号">
-            <a href="#" class="ui-icon-close"></a>
-        </div>
+      <form action="#">
         <div class="ui-form-item ui-form-item-r uc-border-b user-confirm">
-            <input type="text" placeholder="请输入验证码">
+            <input type="text"  placeholder="验证邮箱">
             <!-- 若按钮不可点击则添加 disabled 类 -->
-            <button type="button">获取验证码</button>
+            <button type="button">发送验证</button>
             <a href="#" class="ui-icon-close"></a>
         </div>
       </form>
     </div>
     <div class="ui-btn-wrap user-btn-m">
-        <a class="u-shopflow-btn" href="javascript:void()">确认修改</a>
+        <a class="u-shopflow-btn" target="_blank" href="https://mail.qq.com">去邮箱完成验证</a>
     </div>
   </section>
-
   <script src="js/jquery-1.9.1.min.js"></script>
   <script src="js/lib/zeptojs/zepto.min.js"></script>
   <script src="js/frozen.js"></script>

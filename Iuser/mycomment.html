@@ -12,23 +12,76 @@
 <body ontouchstart="" onload="time()">
   <header class="ui-header ui-header-positive">
     <i class="ui-icon-return" onclick="history.back()"></i>
-    <h1><span class="u-top-tit">账户设置</span></h1>
+    <h1><span class="u-top-tit">我的评论</span></h1>
     <!-- <a class="u-user-centent" href="search.html">搜索</a> -->
     <a class="u-user-centent" href="index.html">个人中心</a>
   </header>
   <section class="ui-container touchweb-page">
-    <table class="ui-table ui-border-tb">
-      <thead>
-      <tr><th>已购买</th><th>状态</th><th>会员到期时间</th></tr>
-      </thead>
-      <tbody>
-      <tr><td>2014257777</td><td>使用中</td><td>2016-02-06</td></tr>
-      <tr><td>2014257777</td><td>待付款</td><td><a href="#">付款</a></td></tr>
-      <tr><td>2014257777</td><td>待付款</td><td><a href="#">付款</a></td></tr>
-      </tbody>
-  </table>
+    <h2 class="l-userc-title mb10 pt10">我的评论</h2>
+      <table class="ui-table bg-h2 ui-table-border mb10" width="100%">
+        <tr>
+          <th class="tabletitle" colspan="3" scope="col"><a class="dis ui-arrowlink" href="">评论节目：第二期视频名称</a></th>
+        </tr>
+        <tr>
+          <td class="ptb8 textl pl5">评论时间：</td>
+          <td class="ptb8 textl pl5" colspan="2">2015/11/27 15:43:52</td>
+        </tr>
+      </table>
+      <table class="ui-table bg-h2 ui-table-border mb10" width="100%">
+        <tr>
+          <th class="tabletitle" colspan="3" scope="col"><a class="dis ui-arrowlink" href="">评论节目：第二期视频名称</a></th>
+        </tr>
+        <tr>
+          <td class="ptb8 textl pl5">评论时间：</td>
+          <td class="ptb8 textl pl5" colspan="2">2015/11/27 15:43:52</td>
+        </tr>
+      </table>
+      <table class="ui-table bg-h2 ui-table-border mb10" width="100%">
+        <tr>
+          <th class="tabletitle" colspan="3" scope="col"><a class="dis ui-arrowlink" href="">评论节目：第二期视频名称</a></th>
+        </tr>
+        <tr>
+          <td class="ptb8 textl pl5">评论时间：</td>
+          <td class="ptb8 textl pl5" colspan="2">2015/11/27 15:43:52</td>
+        </tr>
+      </table>
+      <table class="ui-table bg-h2 ui-table-border mb10" width="100%">
+        <tr>
+          <th class="tabletitle" colspan="3" scope="col"><a class="dis ui-arrowlink" href="">评论节目：第二期视频名称</a></th>
+        </tr>
+        <tr>
+          <td class="ptb8 textl pl5">评论时间：</td>
+          <td class="ptb8 textl pl5" colspan="2">2015/11/27 15:43:52</td>
+        </tr>
+      </table>
+      <table class="ui-table bg-h2 ui-table-border mb10" width="100%">
+        <tr>
+          <th class="tabletitle" colspan="3" scope="col"><a class="dis ui-arrowlink" href="">评论节目：第二期视频名称</a></th>
+        </tr>
+        <tr>
+          <td class="ptb8 textl pl5">评论时间：</td>
+          <td class="ptb8 textl pl5" colspan="2">2015/11/27 15:43:52</td>
+        </tr>
+      </table>
+
+      <div class="ui-btn-more">
+        <a href="javascript:void()" id="ui-btn-more">加载更多</a>
+      </div>
   </section>
   <script src="../js/lib/zeptojs/zepto.min.js"></script>
   <script src="../js/frozen.js"></script>
+  <script type="text/javascript">
+    $("#ui-btn-more").tap(function(){
+        var el=$.loading({
+            content:'疯狂加载中...',
+        })
+        setTimeout(function(){
+            el.loading("hide");
+        },2000);
+        el.on("loading:hide",function(){
+            console.log("loading hide");
+        });
+    });
+    </script>
 </body>
 </html>

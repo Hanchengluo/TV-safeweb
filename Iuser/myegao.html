@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+  <meta name="format-detection" content="telephone=no">
+  <title>我的恶搞</title>
+  <link rel="stylesheet" href="../css/frozen.css">
+  <link rel="stylesheet" href="../css/swiper.3.2.0.min.css">
+  <link rel="stylesheet" href="../css/css/mian.css">
+  </head>
+<body ontouchstart="">
+  <header class="ui-header ui-header-positive">
+    <i class="ui-icon-return" onclick="history.back()"></i>
+    <h1><span class="u-top-tit">我的恶搞</span></h1>
+    <!-- <a class="u-user-centent" href="search.html">搜索</a> -->
+    <a class="u-user-centent" href="index.html">个人中心</a>
+  </header>
+  <section class="ui-container touchweb-page">
+    <h2 class="l-userc-title mb10 pt10">我的恶搞</h2>
+      <p class="ptb8 textc">你好懒哟，什么都没上传也！</p>
+      <p class="ptb8 textc">快快用电脑登陆去上传吧!</p>
+      <table class="ui-table bg-h2 ui-table-border mb10" width="100%">
+        <tr>
+          <th class="tabletitle" colspan="4" scope="col"><a class="dis ui-arrowlink" href="">我的第一次恶搞就这样被你搞了</a></th>
+        </tr>
+        <tr>
+          <td class="ptb8 textl pl5">封面图片：</td>
+          <td class="ptb8 textl pl5" colspan="3"><img class="tableimg" src="../word/banner02.png" alt=""></td>
+        </tr>
+        <tr>
+          <td class="ptb8 textl pl5">视频链接：</td>
+          <td class="ptb8 textl pl5" colspan="3"><a href="http://www.huang2a.com">http://www.huang2a.com</a></td>
+        </tr>
+        <tr>
+          <td class="ptb8 textl pl5">提交时间：</td>
+          <td class="ptb8 textl pl5" colspan="3">2015-11-18</td>
+        </tr>
+        <tr>
+          <td class="ptb8 textl pl5" >分数：</td>
+          <td class="ptb8 textl pl5" colspan="3">0.00</td>
+        </tr>
+        <tr>
+          <td class="ptb8 textl pl5" >点赞数：</td>
+          <td class="ptb8 textl pl5" colspan="3">0</td>
+        </tr>
+        <tr>
+          <td class="ptb8 textl pl5" >排名数：</td>
+          <td class="ptb8 textl pl5" colspan="3">0</td>
+        </tr>
+        <tr>
+          <td class="ptb8 textl pl5" >状态：</td>
+          <td class="ptb8 textl pl5" colspan="3">未审核</td>
+        </tr>
+        <tr>
+          <td class="ptb4 textc" colspan="4"><a href="">播放</a></td>
+        </tr>
+      </table>
+      <table class="ui-table bg-h2 ui-table-border mb10" width="100%">
+        <tr>
+          <th class="tabletitle" colspan="4" scope="col"><a class="dis ui-arrowlink" href="">我的第一次恶搞就这样被你搞了</a></th>
+        </tr>
+        <tr>
+          <td class="ptb8 textl pl5">封面图片：</td>
+          <td class="ptb8 textl pl5" colspan="3"><img class="tableimg" src="../word/banner02.png" alt=""></td>
+        </tr>
+        <tr>
+          <td class="ptb8 textl pl5">视频链接：</td>
+          <td class="ptb8 textl pl5" colspan="3"><a href="http://www.huang2a.com">http://www.huang2a.com</a></td>
+        </tr>
+        <tr>
+          <td class="ptb8 textl pl5">提交时间：</td>
+          <td class="ptb8 textl pl5" colspan="3">2015-11-18</td>
+        </tr>
+        <tr>
+          <td class="ptb8 textl pl5" >分数：</td>
+          <td class="ptb8 textl pl5" colspan="3">0.00</td>
+        </tr>
+        <tr>
+          <td class="ptb8 textl pl5" >点赞数：</td>
+          <td class="ptb8 textl pl5" colspan="3">0</td>
+        </tr>
+        <tr>
+          <td class="ptb8 textl pl5" >排名数：</td>
+          <td class="ptb8 textl pl5" colspan="3">0</td>
+        </tr>
+        <tr>
+          <td class="ptb8 textl pl5" >状态：</td>
+          <td class="ptb8 textl pl5" colspan="3">未审核</td>
+        </tr>
+        <tr>
+          <td class="ptb4 textc" colspan="4"><a href="">播放</a></td>
+        </tr>
+      </table>
+      <div class="ui-btn-more">
+        <a href="javascript:void()" id="ui-btn-more">加载更多</a>
+      </div>
+  </section>
+  <script src="../js/lib/zeptojs/zepto.min.js"></script>
+  <script src="../js/frozen.js"></script>
+  <script type="text/javascript">
+    $("#ui-btn-more").tap(function(){
+        var el=$.loading({
+            content:'疯狂加载中...',
+        })
+        setTimeout(function(){
+            el.loading("hide");
+        },2000);
+        el.on("loading:hide",function(){
+            console.log("loading hide");
+        });
+    });
+    </script>
+</body>
+</html>

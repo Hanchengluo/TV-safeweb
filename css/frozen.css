@@ -2292,7 +2292,7 @@ i
     color: #bbb;
 }.ui-form-item-r button:not(.disabled):active
 {
-    background-color: #e5e6e7;
+    background-color: rgba(0, 0, 0, 0.7);
 }.ui-form-item-pure input,
 .ui-form-item-pure textarea
 {

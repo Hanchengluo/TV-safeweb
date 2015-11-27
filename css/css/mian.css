@@ -70,6 +70,31 @@ textarea::placeholder {
   line-height: 44px;
   border: none;
 }
+input::-webkit-input-placeholder {
+  color: #000 !important;
+}
+input:-moz-placeholder {
+  color: #000 !important;
+}
+input::-moz-placeholder {
+  color: #000 !important;
+}
+input:-ms-input-placeholder {
+  color: #000 !important;
+}
+.ui-textarea {
+  display: block;
+  max-width: 100%;
+  min-height: 4rem;
+  border: #000 solid 1px;
+  background: #ffed89;
+  text-indent: 4px;
+}
+.ui-file-btn {
+  background: none;
+  width: 80px;
+  height: 3rem;
+}
 .u-logo {
   width: 10rem;
   height: 44px;
@@ -162,13 +187,16 @@ textarea::placeholder {
   color: #ff0000;
 }
 .fc-0 {
-  color: #000;
+  color: #000 !important;
 }
 .fc-y {
-  color: #ffe501;
+  color: #ffe501 !important;
 }
 .fwb {
   font-weight: bold;
+}
+.taxt-i14 {
+  text-indent: 14px;
 }
 .touchweb-page {
   min-width: 320px;
@@ -180,6 +208,9 @@ textarea::placeholder {
 }
 .mt10 {
   margin-top: 10px;
+}
+.mt20 {
+  margin-top: 20px;
 }
 .mb10 {
   margin-bottom: 10px;
@@ -214,17 +245,20 @@ textarea::placeholder {
 .pr10 {
   padding-right: 10px;
 }
+.pl5 {
+  padding-left: .5rem;
+}
 .textc {
-  text-align: center;
+  text-align: center !important;
 }
 .textl {
-  text-align: left;
+  text-align: left !important;
 }
 .textr {
-  text-align: right;
+  text-align: right !important;
 }
 .bb {
-  border-bottom: #000 solid 1px;
+  border-bottom: #000 solid 1px !important;
 }
 .ui-table {
   font-size: 1.4rem;

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+  <meta name="format-detection" content="telephone=no">
+  <title>退款管理</title>
+  <link rel="stylesheet" href="../css/frozen.css">
+  <link rel="stylesheet" href="../css/swiper.3.2.0.min.css">
+  <link rel="stylesheet" href="../css/css/mian.css">
+  </head>
+<body ontouchstart="">
+  <header class="ui-header ui-header-positive">
+    <i class="ui-icon-return" onclick="history.back()"></i>
+    <h1><span class="u-top-tit">退款管理</span></h1>
+    <!-- <a class="u-user-centent" href="search.html">搜索</a> -->
+    <a class="u-user-centent" href="index.html">个人中心</a>
+  </header>
+  <footer class="ui-footer ui-footer-btn">
+    <div class="fooder-affirm ptb8 plr8 bg-h2 textc"><a class="u-shopflow-btn" id="u-addressinput-btn" href="javascript:void()">提交换货</a></div>
+  </footer>
+  <section class="ui-container touchweb-page pt10">
+    <div class="l-myreturninput-box fz14">
+      <h2 class="l-userc-title mb10 pt10">商品信息</h2>
+      <table class="ui-table bg-h2 ui-table-border mb10" width="100%">
+      <tr>
+        <th class="tabletitle" colspan="3" scope="col"><a class="dis ui-arrowlink" href="../shopinfo.html">多功能应急电源</a></th>
+        </tr>
+      <tr>
+        <td width="40%"><img class="tableimg" src="../word/shoplist02.png" alt=""></td>
+        <td width="30%">单价：800.00 <br>总价：800.00</td>
+        <td width="30%">数量：1</td>
+      </tr>
+    </table>
+    <h2 class="l-userc-title mb10 pt10">换货理由</h2>
+      <div class="ui-row-flex ptb8 plr8 bb">
+            <div class="ui-col">联系人：</div>
+            <div class="ui-col ui-col-3"><input class="u-input-b" type="text" ></div>
+        </div>
+        <div class="ui-row-flex ptb8 plr8 bb">
+            <div class="ui-col">手机号码：</div>
+            <div class="ui-col ui-col-3"><input class="u-input-b" type="text"></div>
+        </div>
+        <div class="ui-row-flex ptb8 plr8 bb">
+            <div class="ui-col">换货理由：</div>
+            <div class="ui-col ui-col-3">
+              <textarea class="ui-textarea"></textarea>
+            </div>
+        </div>
+    </div>
+  </section>
+  <script src="../js/lib/zeptojs/zepto.min.js"></script>
+  <script src="../js/frozen.js"></script>
+  <script type="text/javascript">
+      var el;
+      $("#u-addressinput-btn").tap(function(){
+          el=$.tips({
+              content:'提交成功',
+              stayTime:2000,
+              type:"success"
+          })
+          el.on("tips:hide",function(){
+              console.log("tips hide");
+          })
+      });
+    </script>
+</body>
+</html>
