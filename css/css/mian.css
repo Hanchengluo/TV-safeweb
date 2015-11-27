@@ -655,11 +655,11 @@ textarea::placeholder {
   padding-left: 1rem;
   font-weight: bold;
 }
-.user-edit .user-text label {
+.user-text label {
   color: #000;
 }
-.user-edit .user-text > p {
-  margin-left: 8rem;
+.user-text > p {
+  padding-left: 8rem;
 }
 .l-userc-title {
   display: block;
@@ -706,4 +706,23 @@ textarea::placeholder {
 .l-sigin-list .sigintime {
   padding-right: 1rem;
   line-height: 40px;
+}
+.u-changekey {
+  background: none;
+}
+.u-changekey .user-confirm button {
+  background: #000;
+  width: 8rem;
+  height: 36px;
+  margin-top: 4px;
+  line-height: 36px;
+  border-radius: 5px;
+  margin-right: 0.8rem;
+}
+.user-bg {
+  background: none;
+}
+.user-btn-m {
+  text-align: center;
+  margin-top: 10px;
 }
