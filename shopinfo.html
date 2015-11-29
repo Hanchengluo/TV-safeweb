@@ -73,16 +73,16 @@
                       <div class="swiper-pagination swiper-pagination-white"></div>
                     </div>
                   </div>
-                  <div class="shopinfo-text bg-h2 ptb8">
+                  <div class="shopinfo-text bg-h2 ptb8 plr4">
                     <p class="fz16 textl ptb8">纽曼S400汽车应急启动电源12V移动电源车载用电瓶多功能充电宝</p>
                     <p class="fz16 textl fc-h">¥420.00</p>
                   </div>
-                  <div class="shopinfo-yh bg-h2 ui-row-flex textl fz12 pd10 bb">
+                  <div class="shopinfo-yh bg-h2 ui-row-flex textl fz12 pd10 bb plr4">
                       <div class="ui-col ui-col">月售量  15</div>
                       <div class="ui-col ui-col">累计评价  15</div>
                       <div class="ui-col ui-col">送积分  29</div>
                   </div>
-                  <div class="l-shopinfo-size bg-h2 fz14">
+                  <div class="l-shopinfo-size bg-h2 fz14 plr4">
                     <div class="sys_item_spec">
                         <dl class="l-float iteminfo_parameter sys_item_specpara ui-row-flex" data-sid="1">
                             <dt class="ui-col">颜色：</dt>
@@ -110,25 +110,22 @@
                         </dl>
                     </div>
                   </div> <!-- end shopinfo-size -->
-                  <div class="shopbuy-no ui-row-flex bg-h2 fz14">
+                  <div class="shopbuy-no ui-row-flex bg-h2 fz14 pt10 plr4">
                     <div class="ui-col"><span class="sl_tit">数量：</span></div>
                     <div class="ui-col ui-col-3">
                           <span id="shuliang" class="Spinner"></span>
                     </div>
                   </div>
                   <div class="shopsome-cz ui-row-flex pd10 bg-h2 fz14">
-                    <div class="ui-col "><a href="">收藏</a></div>
-                    <div class="ui-col "><a href="">分享</a></div>
+                    <div class="ui-col "><a id="collect-btn" href="javascript:void()">收藏</a></div>
+                    <div class="ui-col "><a href="http://www.jiathis.com/share/" class="jiathis fenx fx">分享</a>
+                    <script type="text/javascript" src="http://v1.jiathis.com/code/jia.js" charset="utf-8"></script>
+                    </div>
                   </div>
                   <div class="l-shopcan pt10">
-                    <h2 class="fz16 pd10"><span>商品参数</span></h2>
-                    <div class="ui-row fz14">
-                      <div class="ui-col ptb4">品牌:凡卡 </div>
-                      <div class="ui-col ptb4">颜色分类: 带智能夹带充气泵 带智能夹</div>
-                      <div class="ui-col ptb4">型号: S2外壳材质</div>
-                      <div class="ui-col ptb4">塑料电池容量:10001MAh(含)-15000MAh(含)</div>
-                      <div class="ui-col ptb4">电池类型: 锂聚合物</div>
-                      <div class="ui-col ptb4">电池输出电压: 12V</div>
+                    <div class="ui-row-flex l-weixin-2code plr4">
+                        <div class="ui-col ui-col plr4 ptb4"><img src="images/icon-weixin-2code.jpg" alt=""></div>
+                        <div class="ui-col ui-col plr4 ptb4"><img src="images/erweima1.png" alt=""></div>
                     </div>
                   </div>
                   <div class="l-shopinfo-img pt10 fz14">
@@ -187,9 +184,6 @@
               </li>
           </ul>
       </div>
-    <!-- <div class="ui-btn-more">
-      <a href="javascript:void()" id="ui-btn-more">图片详情</a>
-    </div> -->
   </section>
   <script src="js/jquery-1.9.1.min.js"></script>
   <script src="js/lib/zeptojs/zepto.min.js"></script>
@@ -214,7 +208,7 @@
         })
       })
       $(function(){
-        $("#shuliang").Spinner();
+        $(".Spinner").Spinner();
       });
     </script>
   <script>
@@ -241,6 +235,24 @@
             console.log(fromIndex,toIndex);// from 为当前页，to 为下一页
         })
     })();
-        </script>
+  </script>
+  <script>
+    (function (){
+      $("#collect-btn").click(function(){
+          var dia=$.dialog({
+              title:'温馨提示',
+              content:'温馨提示内容',
+              button:["确认","取消"]
+          });
+
+          dia.on("dialog:action",function(e){
+              console.log(e.index)
+          });
+          dia.on("dialog:hide",function(e){
+              console.log("dialog hide")
+          });
+      });
+    }
+  </script>
 </body>
 </html>

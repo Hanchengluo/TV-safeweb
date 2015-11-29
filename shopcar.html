@@ -26,7 +26,6 @@
   </footer>
   <section class="ui-container touchweb-page">
     <div class="l-shopcar-page">
-
       <div class="l-shopcar-list mb20 ptb8  bg-h2">
         <div class="ui-row-flex ptb8 plr8 bb">
           <div class="ui-col ui-col-4">
@@ -36,9 +35,9 @@
           <div class="ui-col fz14 textr">￥59.00</div>
         </div>
         <div class="ui-row-flex ptb8 plr8">
-          <div class="ui-col ui-col">
-            <label class="l-left" for="">数量：</label>
-            <input class="l-left u-input-s" style="width: 4rem;" type="number">
+          <div class="ui-col ui-col shopbuynumber">
+            <label class="l-left ptb4" for="">数量：</label>
+            <span class="Spinner"></span>
           </div>
           <div class="ui-col ui-col fz14 textr"><a class="u-shopflow-btn" href="javascript:void()">删除</a></div>
         </div>
@@ -52,9 +51,9 @@
           <div class="ui-col fz14 textr">￥59.00</div>
         </div>
         <div class="ui-row-flex ptb8 plr8">
-          <div class="ui-col ui-col">
-            <label class="l-left" for="">数量：</label>
-            <input class="l-left u-input-s" style="width: 4rem;" type="number">
+          <div class="ui-col ui-col shopbuynumber">
+            <label class="l-left ptb4" for="">数量：</label>
+            <span class="Spinner"></span>
           </div>
           <div class="ui-col ui-col fz14 textr"><a class="u-shopflow-btn" href="javascript:void()">删除</a></div>
         </div>
@@ -68,9 +67,9 @@
           <div class="ui-col fz14 textr">￥59.00</div>
         </div>
         <div class="ui-row-flex ptb8 plr8">
-          <div class="ui-col ui-col">
-            <label class="l-left" for="">数量：</label>
-            <input class="l-left u-input-s" style="width: 4rem;" type="number">
+          <div class="ui-col ui-col shopbuynumber">
+            <label class="l-left ptb4" for="">数量：</label>
+            <span class="Spinner"></span>
           </div>
           <div class="ui-col ui-col fz14 textr"><a class="u-shopflow-btn" href="javascript:void()">删除</a></div>
         </div>
@@ -84,16 +83,21 @@
           <div class="ui-col fz14 textr">￥59.00</div>
         </div>
         <div class="ui-row-flex ptb8 plr8">
-          <div class="ui-col ui-col">
-            <label class="l-left" for="">数量：</label>
-            <input class="l-left u-input-s" style="width: 4rem;" type="number">
+          <div class="ui-col ui-col shopbuynumber">
+            <label class="l-left ptb4" for="">数量：</label>
+            <span class="Spinner"></span>
           </div>
           <div class="ui-col ui-col fz14 textr"><a class="u-shopflow-btn" href="javascript:void()">删除</a></div>
         </div>
       </div>
     </div>
   </section>
-  <script src="js/lib/zeptojs/zepto.min.js"></script>
-  <script src="js/frozen.js"></script>
+  <script src="js/jquery-1.9.1.min.js"></script>
+  <script src="js/jquery.Spinner.js"></script>
+   <script type="text/javascript">
+      $(function(){
+        $(".Spinner").Spinner();
+      });
+    </script>
 </body>
 </html>

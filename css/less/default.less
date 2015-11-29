@@ -93,3 +93,36 @@ input::-webkit-input-placeholder {
     width: 80px;
     height: 3rem;
 }
+
+// 返回顶部
+
+#gotoTop
+{
+    position: fixed;
+    bottom: 55px;
+    right: 5px;
+    z-index: 9999;
+    display: none;
+    width: 20px;
+    margin-top: -50px;
+    margin-left: 520px;
+    padding: 9px 4px;
+    cursor: pointer;
+    text-align: center;
+    border: 1px solid #e0e0e0;
+    background: #fff;
+}
+
+// #gotoTop
+// {
+//     _position: absolute;
+//     _top: expression(documentElement.scrollTop + documentElement.clientHeight * 3/4 + "px");
+// }
+
+#gotoTop.hover
+{
+    text-decoration: none;
+
+    color: #fff;
+    background: #000;
+}
