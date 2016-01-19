@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+  <meta name="format-detection" content="telephone=no">
+  <title>安全总动员商城首页</title>
+  <link rel="stylesheet" href="css/frozen.css">
+  <link rel="stylesheet" href="css/css/mian.css">
+  <script src="js/nativeShare.js"></script>
+  <link rel="stylesheet" href="css/nativeShare.css"/>
+  </head>
+<body ontouchstart="">
+  <header class="ui-header ui-header-positive">
+    <i class="ui-icon-return" onclick="history.back()"></i>
+    <h1><span class="u-top-tit">产品详情</span></h1>
+    <!-- <a class="u-user-centent" href="search.html">搜索</a> -->
+    <a class="u-user-centent" href="user/index.html">个人中心</a>
+  </header>
+  <footer class="ui-footer ui-footer-btn">
+    <ul class="ui-tiled">
+      <li class="">
+        <div><a href="shopcar.html">加入购物车</a></div>
+      </li>
+      <li class="">
+        <div><a href="orderInput.html">购买</a></div>
+      </li>
+      <li>
+        <div><a href="user/index.html">我的账号</a></div>
+      </li>
+    </ul>
+  </footer>
+  <section class="ui-container touchweb-page">
+    <div id="nativeShare"></div>
+  </section>
+  <script>
+        var config = {
+            url:'http://blog.wangjunfeng.com',// 分享的网页链接
+            title:'王俊锋的个人博客',// 标题
+            desc:'王俊锋的个人博客',// 描述
+            img:'http://www.wangjunfeng.com/img/face.jpg',// 图片
+            from:'王俊锋的博客'// 来源
+        };
+        var share_obj = new nativeShare('nativeShare',config);
+    </script>
+</body>
+</html>
