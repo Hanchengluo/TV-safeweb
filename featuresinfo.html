@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+  <meta name="format-detection" content="telephone=no">
+  <title>安全总动员商城首页</title>
+  <link rel="stylesheet" href="css/frozen.css">
+  <link rel="stylesheet" href="css/swiper.3.2.0.min.css">
+  <link rel="stylesheet" href="css/css/mian.css">
+  </head>
+<body ontouchstart="">
+  <header class="ui-header ui-header-positive">
+    <i class="ui-icon-return" onclick="history.back()"></i>
+    <h1><span class="u-top-tit">商品列表</span></h1>
+    <!-- <a class="u-user-centent" href="search.html">搜索</a> -->
+    <a class="u-user-centent" href="user/index.html">个人中心</a>
+  </header>
+  <footer class="ui-footer ui-footer-btn">
+    <ul class="ui-tiled">
+      <li class="">
+        <div><a href="index.html">安全总动员</a></div>
+      </li>
+      <li class="">
+        <div><a href="fanscity.html">粉丝大爆炸</a></div>
+      </li>
+      <li class="">
+        <div><a class="active" href="shopcity.html">安全商城</a></div>
+      </li>
+      <li>
+        <div><a href="user/index.html">我的账号</a></div>
+      </li>
+    </ul>
+  </footer>
+  <section class="ui-container touchweb-page">
+    <div class="l-shoplist-ad">
+      <img src="word/feature (3).jpg">
+    </div>
+    <div class="l-feature-page l-float">
+      <div class="bg-h2 ptb8 plr8 mb10">
+        <h3 class="title">卡斯曼腕表专场卡斯曼腕表专场卡斯曼腕表专场卡斯曼腕表专场场 低至0.8折</h3>
+        <p class="intro">卡斯曼（CASIMA）手表男士全自动多功能男表机械钢化材质防水夜光运动手表男款腕表8203黑色 卡斯曼（CASIMA）手表男士全自动多功能男表机械钢化材质防水夜光运动手表男款腕表8203黑色卡斯曼（CASIMA）手表男士全自动多功能男表机械钢化材质防水夜光运动手表男款腕表8203黑色卡斯曼（CASIMA）手表男士全自动多功能男表机械钢化材质防水夜光运动手表男款腕表8203黑色</p>
+      </div>
+      <div class="bg-h2">
+        <img src="word/feature-info.jpg" width="100%" alt="">
+      </div>
+    </div>
+  </section>
+  <script src="js/lib/zeptojs/zepto.min.js"></script>
+  <script src="js/frozen.js"></script>
+  <script type="text/javascript">
+    $("#ui-btn-more").tap(function(){
+        var el=$.loading({
+            content:'疯狂加载中...',
+        })
+        setTimeout(function(){
+            el.loading("hide");
+        },2000);
+        el.on("loading:hide",function(){
+            console.log("loading hide");
+        });
+    });
+    </script>
+</body>
+</html>
